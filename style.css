@@ -1,0 +1,150 @@
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Andika', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f7f7f7;
+}
+
+:root {
+    --a-color: #0090c5;
+    --h2-color: #333;
+    --black-grey: #444444;
+    --menu-links: #696969;
+    --white-color: #fff;
+}
+
+.btn {
+
+}
+
+/* Global */
+
+/* Navbar */
+
+.navbar {
+    max-width: 75rem;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.navbar__logo {
+    margin-left: 2rem;
+}
+
+.navbar__logo-link {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding: 0.2rem 1rem;
+    background-color: rgb(230, 82, 168);
+    border-radius: 7px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.navbar__menu-links {
+
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar__menu-item {
+    padding: 0 0.5rem;
+}
+
+.navbar__menu-link {
+    color: var(--menu-links);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 4px;
+    transition: 0.4s linear;
+}
+
+.navbar__menu-link:hover {
+    background-color: var(--black-grey);
+    color: var(--white-color);
+}
+
+.navbar__menu-item:nth-child(1) .navbar__menu-link {
+    background-color: var(--h2-color);
+    color: var(--white-color);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 20px;
+
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+/* RWD */
+
+@media (max-width: 850px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .navbar__menu-links {
+        width: 100%;
+        margin-top: 2rem;
+        display: none;
+        transition: 5s ease-in-out;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar__menu-item {
+        text-align: center;
+        padding: .5rem 1rem;
+    }
+
+     .navbar__menu-links.active {
+        display: flex;
+     }
+     
+}
+
+/* RWD */
+
+/* Navbar */
