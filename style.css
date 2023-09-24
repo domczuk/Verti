@@ -24,7 +24,15 @@ body {
 }
 
 .btn {
-
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    display: block;
+    width: 16rem;
 }
 
 /* Global */
@@ -56,9 +64,7 @@ body {
     font-family: 'Abril Fatface', cursive;
 }
 
-.navbar__menu-links {
-
-}
+.navbar__menu-links {}
 
 .navbar__menu {
     display: flex;
@@ -139,12 +145,120 @@ body {
         padding: .5rem 1rem;
     }
 
-     .navbar__menu-links.active {
+    .navbar__menu-links.active {
         display: flex;
-     }
-     
+    }
+
 }
 
 /* RWD */
 
 /* Navbar */
+
+/* Main */
+
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: var(--white-color);
+    margin-top: 3rem;
+    padding: 3rem 0;
+    max-width: 68rem;
+    margin: 3rem auto 0 auto;
+}
+
+.main__wrapper {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.main__content__box {
+    flex: 1;
+    margin-left: 5rem;
+}
+
+.main__primary__heading {
+    font-size: 2.5rem;
+    color: var(--h2-color);
+}
+
+.main__secondary__heading {
+    font-weight: 200;
+}
+
+.main__btn__box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 9rem;
+}
+
+.main__btn {
+    background-color: var(--a-color);
+    color: var(--white-color);
+    margin-top: 2rem;
+    position: relative;
+    text-align: start;
+    padding: 0.5rem 1rem;
+}
+
+.main__btn::before {
+    content: "";
+    background-image: url(/12690011911543238858-128.png);
+    display: inline-block;
+    position: absolute;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    top: 33%;
+    right: 8%;
+    background-color: var(--white-color);
+    border-radius: 50%;
+}
+
+.main__btn:nth-of-type(2) {
+    color: var(--h2-color);
+    background-color: #c6c4c4;
+}
+
+.main__btn:nth-of-type(2)::before {
+    content: "";
+    background-image: url(/4062282711617448424-128.png);
+    display: inline-block;
+    position: absolute;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    top: 33%;
+    right: 8%;
+    background-color: var(--white-color);
+    border-radius: 50%;
+}
+
+/* RWD */
+
+@media (max-width: 825px) {
+    .main__wrapper {
+        flex-direction: column;
+    }
+
+    .main__content__box {
+        text-align: center;
+        margin-left: 0;
+        padding: 0 1rem;
+        flex: 0;
+    }
+
+    .main__btn__box {
+        margin-right: 0;
+        flex: 0;
+    }
+}
+
+/* RWD */
+
+/* Main */
