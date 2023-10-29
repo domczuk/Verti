@@ -451,7 +451,7 @@ body {
 
 .info__images__wrapper:nth-of-type(1) .info__btn::before {
     content: "";
-    background-image: url(/assets/2495438061548336236-128.png);
+    background-image: url(assets/2495438061548336236-128.png);
     display: inline-block;
     position: absolute;
     background-size: 20px 20px;
